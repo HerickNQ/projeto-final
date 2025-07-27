@@ -22,7 +22,6 @@ body {
 h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  margin-top: 7rem;
   text-align: center;
   background: linear-gradient(to bottom, rgb(0, 0, 0) 50%, blue 50%);
   color: #ffffff;
@@ -215,10 +214,6 @@ body.dark {
 body.dark .grid div {
   background-color: #1e1e1e;
 }
-body.dark .botao {
-  border-color: #ccc;
-  color: #ccc;
-}
 
 /* Quando o body estiver no modo escuro, estilize o modal */
 body.dark .modal-content {
@@ -246,5 +241,25 @@ body.dark-mode .btn-close {
   overflow: visible !important;
   page-break-before: auto !important;
   page-break-after: auto !important;
+}
+
+a {
+  text-decoration: none;
+}
+h3 {
+  text-align: center;
+}
+.carousel {
+  margin-top: 6.7rem;
+}
+.img-carrossel {
+  height: 400px;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  padding: 10px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 5px black;
+  margin-bottom: 9rem;
 }
 

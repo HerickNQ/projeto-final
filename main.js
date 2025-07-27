@@ -382,4 +382,3 @@ function abrirModalGrafico() {
     });
   }, 300);
 }
-
