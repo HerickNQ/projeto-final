@@ -234,15 +234,6 @@ body.dark-mode .btn-close {
   background-color: #1a73e8;
 }
 
-#pdf {
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
-  overflow: visible !important;
-  page-break-before: auto !important;
-  page-break-after: auto !important;
-}
-
 a {
   text-decoration: none;
 }
