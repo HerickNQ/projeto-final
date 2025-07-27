@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", "Segoe UI", sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 7rem;
+  text-align: center;
+  background: linear-gradient(to bottom, rgb(0, 0, 0) 50%, blue 50%);
+  color: #ffffff;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin-left: 1rem;
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.grid div {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  width: 320px;
+  height: 350px;
+  margin: 0 10px;
+}
+img {
+  border-radius: 8px;
+  width: 300px;
+  height: 250px;
+}
+
+.grid div:hover {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cor-letras {
+  display: block;
+  font-size: 18px;
+  color: #1a73e8;
+  margin-bottom: 5px;
+}
+
+.ouro {
+  background-color: #fff8b5;
+  /* amarelo claro */
+  border-left: 10px solid gold;
+}
+
+.prata {
+  background-color: #e0e0e0;
+  /* prata */
+  border-left: 10px solid silver;
+}
+
+.bronze {
+  background-color: #eac290;
+  /* bronze */
+  border-left: 10px solid #cd7f32;
+}
+
+.filtros {
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.botao {
+  padding: 10px 30px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+}
+.sem-borda{
+  border: none;
+}
+
+.botao:hover {
+  background-color: #155ec4;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.botao:active {
+  transform: scale(0.8);
+}
+
+.footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 10px 0 0 0;
+  width: 100%;
+  padding: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 10px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(230, 228, 228, 0.3);
+  z-index: 999;
+}
+
+.PDF {
+  background: transparent;
+  color: white;
+  border: 2px white solid;
+  border-radius: 20px;
+  margin-left: 10px;
+  padding: 4px;
+}
+.PDF:hover {
+  background: #155ec4;
+  color: black;
+}
+.dropdown-menu {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #1a73e8;
+  padding: 0;
+  background-color: #1a73e8;
+  min-width: 160px;
+}
+
+.dropdown-item {
+  color: white;
+  background-color: #1a73e8;
+  padding: 10px 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.dropdown-item:hover {
+  background-color: black;
+  color: #fff;
+}
+.btn-close:hover,
+.btn-secondary:hover {
+  background-color: red;
+}
+
+/* animação de entrada itens*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.grid div {
+  animation: fadeIn 0.4s ease-in;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #fff;
+}
+body.dark .grid div {
+  background-color: #1e1e1e;
+}
+body.dark .botao {
+  border-color: #ccc;
+  color: #ccc;
+}
+
+/* Quando o body estiver no modo escuro, estilize o modal */
+body.dark .modal-content {
+  background-color: #1e1e1e; /* fundo escuro */
+  color: #f1f1f1; /* texto claro */
+}
+
+body.dark .modal-header,
+body.dark .modal-footer {
+  border-color: #444; /* borda mais escura para combinar */
+}
+
+/* Deixa o botão de fechar do Bootstrap visível no escuro */
+body.dark-mode .btn-close {
+  filter: invert(1) grayscale(100%) contrast(200%);
+}
+#botao-grafico {
+  background-color: #1a73e8;
+}
+
+#pdf {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  overflow: visible !important;
+  page-break-before: auto !important;
+  page-break-after: auto !important;
+}
+
